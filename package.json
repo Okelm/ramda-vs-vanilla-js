@@ -1,0 +1,39 @@
+{
+  "name": "ramda-vs-js",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "kcd-scripts test",
+    "lint": "kcd-scripts lint",
+    "validate": "kcd-scripts validate",
+    "setup": "npm install --silent && npm run validate --silent"
+  },
+  "keywords": [],
+  "author": "Bart Widlarz <bartlomiejwidlarz@gmail.com> (http://bwidlarz.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.26.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^24.8.0",
+    "kcd-scripts": "^1.6.0",
+    "test-data-bot": "^0.8.0"
+  },
+  "babel": {
+    "presets": [
+      "kcd-scripts/babel"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
