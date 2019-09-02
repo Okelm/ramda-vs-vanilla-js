@@ -9,13 +9,12 @@ export const sideEffectRamda = (date, navigate) =>
   )(date)
 
 export const sideEffectJs = (date, navigate) => {
-    const sum = date
+  const sum = date
     .map(element => element.amount)
     .reduce((prev, next) => +prev + +next, 0)
 
-    console.log(sum)
-    if (sum > 35) {
-        navigate('success-page')
-      }
+  console.log(sum)
+  if (sum > 35) {
+    navigate('success-page')
+  }
 }
-  

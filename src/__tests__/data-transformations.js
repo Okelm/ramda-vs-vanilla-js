@@ -4,7 +4,7 @@ import {
   enhanceFavoritesIfs,
 } from '../data-transformations'
 
-describe('selectingCountry', () => {
+describe('enhanceFavorites', () => {
   describe('when things are defined', () => {
     const favorites = {
       movies: [
