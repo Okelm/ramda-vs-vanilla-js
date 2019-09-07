@@ -1,3 +1,4 @@
+
 module.exports = `
-  Open the tests!
+  Open the readme!
 `
