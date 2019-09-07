@@ -7,6 +7,7 @@ const sumUpRamda = R.curry((element, type) =>
     .reduce((prev, next) => +prev + +next, 0),
 )
 
+// it doesn't give as much possibility as ramda's curry
 const sumUpJS = element => type =>
   (element || [])
     .filter(element => element.type === type)
